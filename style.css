@@ -1,0 +1,123 @@
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://c1.wallpaperflare.com/preview/622/850/518/soap-bubbles-colorful-balls-soapy-water.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+.game-container {
+    display: none;
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    border: 2px solid #333;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.5s, box-shadow 0.3s, background 0.3s;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0) 70%);
+}
+
+.circle.fade-out {
+    opacity: 0;
+}
+
+.circle:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+}
+
+.score,
+.lives {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.score {
+    top: 10px;
+    left: 10px;
+}
+
+.lives {
+    top: 10px;
+    right: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu h1{
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+.Levels button {
+    width: 180px;
+    height: 80px;
+    padding: 15px 30px;
+    margin: 110px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 100px;
+    transition-duration: 0.4s;
+}
+
+.Levels button:hover {
+    transform: scale(1.1);
+    background-color: palevioletred;
+    color: white;
+}
+
+.start-button button {
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 90px;
+}
+
+.start-button button:hover {
+    transform: scale(1.1);
+    background-color: rgb(34, 18, 50);
+}
+
+#high-score-display {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: bold;
+}
