@@ -66,9 +66,7 @@ Contributions are welcome! Please follow these steps:
 - [Google Fonts](https://fonts.google.com/) for the Roboto font.
 
 ## Screenshots
-![alt text](image.png)
-
-![alt text](image-1.png)
+![Screenshot 2025-01-28 133341](https://github.com/user-attachments/assets/fa1c1033-a4a7-4472-9587-37710f2bde80)
+![Screenshot 2025-01-28 133730](https://github.com/user-attachments/assets/a501a3cb-24a6-4470-8a8d-a395ba325b63)
 
 ## Video Description
-<video controls src="20250128-0951-33.6428411-1.mp4" title="Title"></video>
